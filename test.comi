@@ -1,0 +1,90 @@
+// this script creates model of mini-MSR in OPERA
+// author: M. Zhao
+// May 2024
+$string yesorno YES
+CLEAR REVERT=NO
+THREED XORIGIN=0 YORIGIN=0 ZORIGIN=0 ROTX=-65 ROTY=0 ROTZ=-45 XASPECT=1 YASPECT=1 ZASPECT=1 SIZE=1 FACETANGLE=5 PERSPECTIVE=YES LINECOLOUR=YES OPTION=SETVIEW 
+
+////////////////////////////////////////////////////////////
+/ Constants
+////////////////////////////////////////////////////////////
+
+/ thickness of mumetal layer
+VARIABLE OPTION=PARAMETER, NAME=#muthickness, Value=0.0015, DESCRIPTION='thickness of mumetal layer [m]'
+
+// data storage levels (DSL)
+/ mumetal
+VARIABLE OPTION=PARAMETER, NAME=#mu_DSL, Value=500, DESCRIPTION='data storage level for mumetal'
+/ air (total potential)
+VARIABLE OPTION=PARAMETER, NAME=#air_tot_DSL, Value=100, DESCRIPTION='data storage level for total potential air'
+/ air (reduced potential)
+VARIABLE OPTION=PARAMETER, NAME=#air_red_DSL, Value=200, DESCRIPTION='data storage level for reduced potential air'
+
+/// meshing parameters
+// max element size (MES)
+/ flat mumetal
+VARIABLE OPTION=PARAMETER, NAME=#mu_flat_MES, Value=0.05, DESCRIPTION='maximum element size for flat mumetal'
+/ bent mumetal
+VARIABLE OPTION=PARAMETER, NAME=#mu_bent_MES, Value=0.03, DESCRIPTION='maximum element size for bent mumetal'
+
+// maximum angle between elements (MAbE)
+VARIABLE OPTION=PARAMETER, NAME=#mu_flat_MAbE, Value=30, DESCRIPTION='maximum angle between elements for flat mumetal'
+/ bent mumetal
+VARIABLE OPTION=PARAMETER, NAME=#mu_bent_MAbE, Value=30, DESCRIPTION='maximum angle between elements for bent mumetal'
+
+
+
+
+////////////////////////////////////////////////////////////
+/ Modelling
+////////////////////////////////////////////////////////////
+
+//// Inner Layer
+
+/ load structural step file
+LOAD OPTION=INSERT FILE='stpfiles//innerMSRstructure.STEP' 
+
+/ rename body
+FILTER TYPE=BODY
+PREVIEW OPTION=PICK | PICK OPTION=ADD PROPERTY=UniqueName LABEL='Unnamed:AAA-001'
+PREVIEW OPTION=ACCEPT REDISPLAY=NO |  RENAME NAME='inner_msr_structure' UNIQUENAME='inner_msr_structure'
+
+/// Faces
+FILTER TYPE=FACE
+// flat
+/ front
+PREVIEW OPTION=PICK | PICK OPTION=ADD TYPE=FACE UNIQUEBODYNAME='inner_msr_structure' IDENTIFIER=A.00003
+PREVIEW OPTION=ACCEPT REDISPLAY=NO |  FACEDATA OPTION=MODIFY BOUNDARYLABEL='mumetal' LEVEL=#mu_DSL ELEMENTTYPE=Linear SIZE=#mu_flat_MES NORMALTOL=#mu_flat_MAbE FORMETHOD=NONE BACKMETHOD=NONE
+/ back
+PREVIEW OPTION=PICK | PICK OPTION=ADD TYPE=FACE UNIQUEBODYNAME='inner_msr_structure' IDENTIFIER=A.00005
+PREVIEW OPTION=ACCEPT REDISPLAY=NO |  FACEDATA OPTION=MODIFY ELEMENTTYPE=Linear SIZE=#mu_flat_MES NORMALTOL=#mu_flat_MAbE FORMETHOD=NONE BACKMETHOD=NONE
+/ left and right
+PREVIEW OPTION=PICK | PICK OPTION=ADD TYPE=FACE UNIQUEBODYNAME='inner_msr_structure' IDENTIFIER=A.00002
+PREVIEW OPTION=ACCEPT REDISPLAY=NO |  FACEDATA OPTION=MODIFY BOUNDARYLABEL='mumetal' LEVEL=#mu_DSL ELEMENTTYPE=Linear SIZE=#mu_flat_MES NORMALTOL=#mu_flat_MAbE FORMETHOD=NONE BACKMETHOD=NONE
+PREVIEW OPTION=PICK | PICK OPTION=ADD TYPE=FACE UNIQUEBODYNAME='inner_msr_structure' IDENTIFIER=A.00004
+PREVIEW OPTION=ACCEPT REDISPLAY=NO |  FACEDATA OPTION=MODIFY BOUNDARYLABEL='mumetal' LEVEL=#mu_DSL ELEMENTTYPE=Linear SIZE=#mu_flat_MES NORMALTOL=#mu_flat_MAbE FORMETHOD=NONE BACKMETHOD=NONE
+/ top
+PREVIEW OPTION=PICK | PICK OPTION=ADD TYPE=FACE UNIQUEBODYNAME='inner_msr_structure' IDENTIFIER=A.00006
+PREVIEW OPTION=ACCEPT REDISPLAY=NO |  FACEDATA OPTION=MODIFY BOUNDARYLABEL='mumetal' LEVEL=#mu_DSL ELEMENTTYPE=Linear SIZE=#mu_flat_MES NORMALTOL=#mu_flat_MAbE FORMETHOD=NONE BACKMETHOD=NONE
+/ bottom
+PREVIEW OPTION=PICK | PICK OPTION=ADD TYPE=FACE UNIQUEBODYNAME='inner_msr_structure' IDENTIFIER=A.00007
+PREVIEW OPTION=ACCEPT REDISPLAY=NO |  FACEDATA OPTION=MODIFY BOUNDARYLABEL='mumetal' LEVEL=#mu_DSL ELEMENTTYPE=Linear SIZE=#mu_flat_MES NORMALTOL=#mu_flat_MAbE FORMETHOD=NONE BACKMETHOD=NONE
+
+PREVIEW OPTION=UNPICK REDISPLAY=YES
+
+// BH data
+/ create label
+BHDATA OPTION=NEW  LABEL='mumetalBH' 
+
+/ assign bh file to label
+BHDATA OPTION=LOAD LABEL=mumetalBH FILE='bhdata//PMTshieldB_anh.bh'
+
+/ match face label to bh label
+BOUNDARY UNPICK | BOUNDARY GUIINIT
+BOUNDARY PICK 'mumetal'
+BOUNDARY OPTION=MODIFY CONDITION=THINPLATE PLATEMATERIAL=mumetal PLATETHICKNESS=#muthickness
+BOUNDARY UNPICK 
+
+
+
+
