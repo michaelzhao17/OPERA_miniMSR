@@ -6,8 +6,8 @@ User Name          : mzhao
 Source System      : STEP
 Destination System : ACIS
 Input File         : C:\Users\mzhao\OPERA_miniMSR\stpfiles\innerMSRstructure.STEP
-Output File        : C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P31988-T3932-24_SPAIop_12_Doc.sab
-Start Time         : Wed May 15 15:19:01 2024
+Output File        : C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P19172-T19116-2_SPAIop_1_Doc.sab
+Start Time         : Wed May 15 15:27:28 2024
 
 --------------------------------------------------------------------------------
 Message : === Translation Options ===
@@ -96,9 +96,9 @@ No. of Items of DocumentFeature Representation :    0
 No. of Items of BRep Representation            :    1
 --------------------------------------------------------------------------------
 Message : Setting save mode for ACIS file based on the file extension
-Output File "C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P31988-T3932-24_SPAIop_12_Doc.sab" is Successfully Written
+Output File "C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P19172-T19116-2_SPAIop_1_Doc.sab" is Successfully Written
 --------------------------------------------------------------------------------
-Finish Time : Wed May 15 15:19:01 2024
+Finish Time : Wed May 15 15:27:28 2024
 
 --------------------------------------------------------------------------------
 Translation Result : Success
