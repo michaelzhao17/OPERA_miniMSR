@@ -42,7 +42,7 @@ VARIABLE OPTION=PARAMETER, NAME=#mu_bent_MAbE, Value=30, DESCRIPTION='maximum an
 //// Inner Layer
 
 / load structural step file
-LOAD OPTION=INSERT FILE='stpfiles//innerMSRstructure.STEP' 
+LOAD OPTION=INSERT FILE='stpfiles//layer1.STEP' 
 
 / rename body
 FILTER TYPE=BODY
