@@ -1,0 +1,98 @@
+Opera-3d Post-Processor                 started on 24/May/2024 at 09:09:46
+Opera 2021 SP3 [Build 3]
+(c) Copyright Dassault Systemes Ltd 1984-2021. All Rights Reserved.
+Node: UCNENG01. Processor: Intel64 Family 6 Model 42 Stepping 7, GenuineIntel. System: Windows 10 Version 2009 windows (10.0.19045)
+Number of threads = 4. Available processors (CPU cores) = 4.
+Command language initialization.
+Unit of Length           : cm                | Unit of Magn Flux Density: gauss
+Unit of Magnetic Field   : oersted           | Unit of Magn Scalar Pot  : oersted cm
+Unit of Magn Vector Pot  : gauss cm          | Unit of Conductivity     : S/cm
+Unit of Current Density  : A/cm^2            | Unit of Power            : W
+Unit of Force            : N                 | Unit of Energy           : J
+Unit of Electric Field   : V/cm              | Unit of Elec Flux Density: C/cm^2
+Unit of Mass             : g                 | Unit of Pressure         : Pa
+Unit of Charge Density   : C/cm^3            | Unit of Electric Pot     : volt
+Information: opera.comi was not found in the local or home directory
+**** COMMAND INPUT *** ACTIVATE FILE='C:\Users\mzhao\OPERA_miniMSR\mini_MSR.op3'
+Opening file for checking: C:\Users\mzhao\OPERA_miniMSR\mini_MSR.op3
+**** COMMAND INPUT *** LOAD
+Attaching file as resident: C:\Users\mzhao\OPERA_miniMSR\mini_MSR.op3
+Opening database ...ers\mzhao\OPERA_miniMSR\mini_MSR.op3, simulation number 1 on 24/May/2024 at 09:09:47
+Unit of Length           : m                 | Unit of Magn Flux Density: T
+Unit of Magnetic Field   : A/m               | Unit of Magn Scalar Pot  : A
+Unit of Magn Vector Pot  : Wb/m              | Unit of Conductivity     : S/m
+Unit of Current Density  : A/m^2             | Unit of Power            : W
+Unit of Force            : N                 | Unit of Energy           : J
+Unit of Electric Field   : V/m               | Unit of Elec Flux Density: C/m^2
+Unit of Mass             : kg                | Unit of Pressure         : Pa
+Unit of Charge Density   : C/m^3             | Unit of Electric Pot     : volt
+**** COMMAND INPUT *** SELECT ACTION=DEFAULT
+**** COMMAND INPUT *** SELECT ACTION=SELECT OPTION=SURFACES
+**** COMMAND INPUT *** THREED OPTION=REFRESH
+**** COMMAND INPUT ***
+**** COMMAND INPUT ***
+**** COMMAND INPUT ***
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** POINT XP=0 YP=0 ZP=0 COMPONENT=B
+At (0.0,0.0,0.0), B = 1.91990875325479E-07
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** LINE  BUFFERNAME='Line' X1=0 X2=X1 Y1=0 Y2=Y1 Z1=1 Z2=-1 NP=100
+**** COMMAND INPUT *** DATALINE OPTION=CREATE BUFFERNAME='Line' MINX=* MAXX=* NAME='NewLine' XCOMPONENT=z YCOMPONENT=B INTERPOLATION=LINEAR GRAPH='Default'
+Integral: -7.74342e-05
+Maximum: 8.87047e-05 (X at maximum: -0.5)
+Minimum: 1.91494e-07 (X at minimum: 0.02)
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** LINE  BUFFERNAME='Line' X1=0 X2=X1 Y1=0 Y2=Y1 Z1=1 Z2=-1 NP=200
+**** COMMAND INPUT *** DATALINE OPTION=CREATE BUFFERNAME='Line' MINX=* MAXX=* NAME='NewLine_1' XCOMPONENT=z YCOMPONENT=B INTERPOLATION=LINEAR GRAPH='Default'
+Integral: -7.69965e-05
+Maximum: 8.87047e-05 (X at maximum: -0.5)
+Minimum: 1.91494e-07 (X at minimum: 0.02)
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** LINE  BUFFERNAME='Line' X1=0 X2=X1 Y1=1 Z1=0 Z2=Z1 Y2=-1 NP=200
+**** COMMAND INPUT *** DATALINE OPTION=CREATE BUFFERNAME='Line' MINX=* MAXX=* NAME='NewLine' XCOMPONENT=Y YCOMPONENT=B INTERPOLATION=LINEAR GRAPH='Default'
+Integral: -9.18829e-05
+Maximum: 7.94692e-05 (X at maximum: 0.39)
+Minimum: 1.24171e-07 (X at minimum: 0.32)
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** LINE  BUFFERNAME='Line' X1=1 Y1=0 Y2=Y1 Z1=0 Z2=Z1 X2=-1 NP=200
+**** COMMAND INPUT *** DATALINE OPTION=CREATE BUFFERNAME='Line' MINX=* MAXX=* NAME='NewLine_2' XCOMPONENT=X YCOMPONENT=B INTERPOLATION=LINEAR GRAPH='Default'
+Integral: -7.82702e-05
+Maximum: 8.06643e-05 (X at maximum: 0.53)
+Minimum: 1.19103e-07 (X at minimum: 0.32)
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED OPTION=GETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** SELECT ACTION=SELECT  OPTION=SURFACES SYMMETRY=Full
+**** COMMAND INPUT *** THREED OPTION=REFRESH
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED OPTION=GETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED TYPE=COMPONENT COMPONENT=Bz MIN=* MAX=* VECTOR=NO XORIGIN=0.184999999999998 YORIGIN=0.184999999999996 ZORIGIN=-4.61852778244065E-16 ROTX=24.5937679450904 ROTY=42.910801927875 ROTZ=-4.40816720984229 XASPECT=1 YASPECT=1 ZASPECT=1 SIZE=0.370000000000004 FACETANGLE=10 PERSPECTIVE=YES LINECOLOUR=YES USEOUTERELEM=NO OPTION=SETVIEW
+Min (-0.0518793315381704) at (0.202501801299627,0.368000000000002,-0.313), Max (0.0883218571437016) at (0.194576324024999,0.370000000000001,-0.276014910475187)
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED OPTION=GETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED TYPE=COMPONENT COMPONENT=Bz MIN=1e-1 MAX=-1e-1 VECTOR=NO XORIGIN=0.186373672980068 YORIGIN=-0.0262216808319157 ZORIGIN=0.081479281353951 ROTX=18.4216242664815 ROTY=43.3972085889468 ROTZ=-4.69989964260173 XASPECT=1 YASPECT=1 ZASPECT=1 SIZE=0.437188451700005 FACETANGLE=10 PERSPECTIVE=YES LINECOLOUR=YES USEOUTERELEM=NO OPTION=SETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED TYPE=COMPONENT COMPONENT=Bz MIN=1e-4 MAX=-1e-4 VECTOR=NO XORIGIN=0.186373672980068 YORIGIN=-0.0262216808319157 ZORIGIN=0.081479281353951 ROTX=18.4216242664815 ROTY=43.3972085889468 ROTZ=-4.69989964260173 XASPECT=1 YASPECT=1 ZASPECT=1 SIZE=0.437188451700005 FACETANGLE=10 PERSPECTIVE=YES LINECOLOUR=YES USEOUTERELEM=NO OPTION=SETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** WINDOW OUTLINE=NO
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** WINDOW OUTLINE=YES
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** WINDOW OUTLINE=NO
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED OPTION=GETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED TYPE=COMPONENT COMPONENT=Bz MIN=1.0E-05 MAX=-1.0E-05 VECTOR=NO XORIGIN=0.186373672980068 YORIGIN=-0.0262216808319157 ZORIGIN=0.081479281353951 ROTX=10.4098572126375 ROTY=51.5544713543974 ROTZ=-3.15460972380979 XASPECT=1 YASPECT=1 ZASPECT=1 SIZE=0.437188451700005 FACETANGLE=10 PERSPECTIVE=YES LINECOLOUR=YES USEOUTERELEM=NO OPTION=SETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED OPTION=GETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** THREED TYPE=SURFACE VECTOR=NO XORIGIN=0.186373672980068 YORIGIN=-0.0262216808319157 ZORIGIN=0.081479281353951 ROTX=0.982673222173367 ROTY=45.1546075571016 ROTZ=14.3395161808353 XASPECT=1 YASPECT=1 ZASPECT=1 SIZE=0.437188451700005 FACETANGLE=10 PERSPECTIVE=YES LINECOLOUR=YES USEOUTERELEM=NO OPTION=SETVIEW
+**** COMMAND INPUT ***
+**** COMMAND INPUT *** POINT XP=0 YP=0 ZP=0 COMPONENT=B
+At (0.0,0.0,0.0), B = 1.91990875325479E-07
+**** COMMAND INPUT ***
+User requested application close.
+Opera-3d Post-Processor                complete on 24/May/2024 at 09:22:24
+                                                00:12:37.87 (00:02:24.98 cp)
