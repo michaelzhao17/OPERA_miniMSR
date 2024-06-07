@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------------
-Translator Name    : Spatial InterOp Connect ( Version : 2020 1.0.1 )
+Translator Name    : Spatial InterOp Connect ( Version : 2019 1.0.1 )
 System Name        : Windows_NT
-Machine Name       : UCNENG01
+Machine Name       : TUCAN-MAGPC
 User Name          : mzhao
 Source System      : STEP
 Destination System : ACIS
 Input File         : C:\Users\mzhao\OPERA_miniMSR\stpfiles\outer_layer.STEP
-Output File        : C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P1204-T1624-14_SPAIop_7_Doc.sab
-Start Time         : Wed May 29 11:02:17 2024
+Output File        : C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P28472-T28872-156_SPAIop_78_Doc.sab
+Start Time         : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Message : === Translation Options ===
@@ -43,9 +43,6 @@ Start BRep
 BRep Source Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-BRep Target Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 BRep Source Representation Postprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -72,9 +69,6 @@ Start DocumentFeature
 DocumentFeature Source Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-DocumentFeature Target Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 DocumentFeature Source Representation Postprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -97,14 +91,11 @@ Start Assembly
 Assembly Source Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-Assembly Target Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 Start Translation of Part Definition Document In Assembly
 --------------------------------------------------------------------------------
 Source System      : STEP
 Destination System : ACIS
-Start Time         : Wed May 29 11:02:17 2024
+Start Time         : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Message : === Translation Options ===
@@ -126,9 +117,6 @@ Start BRep
 BRep Source Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-BRep Target Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 BRep Source Representation Postprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -153,9 +141,6 @@ Start DocumentFeature
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 DocumentFeature Source Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-DocumentFeature Target Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 DocumentFeature Source Representation Postprocessing Result : Success
@@ -184,7 +169,7 @@ Target Document Postprocessing Result : Success
 No. of Items of DocumentFeature Representation :    0
 No. of Items of BRep Representation            :    1
 --------------------------------------------------------------------------------
-Finish Time : Wed May 29 11:02:17 2024
+Finish Time : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Translation Result : Success
@@ -197,7 +182,7 @@ Start Translation of Part Definition Document In Assembly
 --------------------------------------------------------------------------------
 Source System      : STEP
 Destination System : ACIS
-Start Time         : Wed May 29 11:02:17 2024
+Start Time         : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Message : === Translation Options ===
@@ -219,9 +204,6 @@ Start BRep
 BRep Source Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-BRep Target Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 BRep Source Representation Postprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -246,9 +228,6 @@ Start DocumentFeature
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 DocumentFeature Source Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-DocumentFeature Target Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 DocumentFeature Source Representation Postprocessing Result : Success
@@ -277,7 +256,7 @@ Target Document Postprocessing Result : Success
 No. of Items of DocumentFeature Representation :    0
 No. of Items of BRep Representation            :    1
 --------------------------------------------------------------------------------
-Finish Time : Wed May 29 11:02:17 2024
+Finish Time : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Translation Result : Success
@@ -290,7 +269,7 @@ Start Translation of Part Definition Document In Assembly
 --------------------------------------------------------------------------------
 Source System      : STEP
 Destination System : ACIS
-Start Time         : Wed May 29 11:02:17 2024
+Start Time         : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Message : === Translation Options ===
@@ -312,9 +291,6 @@ Start BRep
 BRep Source Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-BRep Target Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
 BRep Source Representation Postprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -339,9 +315,6 @@ Start DocumentFeature
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 DocumentFeature Source Representation Preprocessing Result : Success
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-DocumentFeature Target Representation Preprocessing Result : Success
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 DocumentFeature Source Representation Postprocessing Result : Success
@@ -370,7 +343,7 @@ Target Document Postprocessing Result : Success
 No. of Items of DocumentFeature Representation :    0
 No. of Items of BRep Representation            :    1
 --------------------------------------------------------------------------------
-Finish Time : Wed May 29 11:02:17 2024
+Finish Time : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Translation Result : Success
@@ -401,9 +374,9 @@ No. of Items of DocumentFeature Representation :    0
 No. of Items of BRep Representation            :    0
 --------------------------------------------------------------------------------
 Message : Setting save mode for ACIS file based on the file extension
-Output File "C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P1204-T1624-14_SPAIop_7_Doc.sab" is Successfully Written
+Output File "C:\Users\mzhao\AppData\Local\Temp\SPAXTemp-P28472-T28872-156_SPAIop_78_Doc.sab" is Successfully Written
 --------------------------------------------------------------------------------
-Finish Time : Wed May 29 11:02:17 2024
+Finish Time : Wed Jun  5 13:39:39 2024
 
 --------------------------------------------------------------------------------
 Translation Result : Success

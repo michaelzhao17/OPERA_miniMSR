@@ -1,0 +1,7 @@
+/ Opera-3d Post-Processor
+/ Opera 2020 SP3 [Build 2]
+/ Started: 03/Jun/2024 15:32:49
+/ Node: TUCAN-MAGPC. Processor: Intel64. System: Windows 10
+ACTIVATE FILE='C:\Users\mzhao\OPERA_miniMSR\miniMSR_layer.op3' | LOAD | SELECT ACTION=DEFAULT | SELECT ACTION=SELECT OPTION=SURFACES | THREED OPTION=REFRESH
+
+POINT XP=0 YP=0 ZP=0 COMPONENT=H
