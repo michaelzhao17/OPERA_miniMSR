@@ -180,7 +180,7 @@ for arangement in [dfdf, ]: #, ffff, dfff, dddd
         z.append(float(lst_of_val[0]))
         Bz.append(float(lst_of_val[1]) * 10**6)
         
-    ax.plot(z, Bz, '-', label='Simulation {}'.format(labels[ct]))
+    ax.plot(z, Bz, '-', label='Simulation'.format(labels[ct]))
     axins.plot(z, Bz, '-')
     axins1.plot(z, Bz, '-')
     ct += 1
@@ -204,16 +204,17 @@ ax.indicate_inset_zoom(axins1, edgecolor="black")
 ax.set_xlabel('z [m]')
 ax.set_ylabel(r'B [$\mu$T]')
 # Shrink current axis's height by 10% on the bottom
-box = ax.get_position()
-ax.set_position([box.x0, box.y0 + box.height * 0.1,
-                  box.width, box.height * 0.9])
-ax.set_position([box.x0 + box.width * 0.1, box.y0,
-                  box.width * 0.9, box.height])
+# box = ax.get_position()
+# ax.set_position([box.x0, box.y0 + box.height * 0.1,
+#                   box.width, box.height * 0.9])
+# ax.set_position([box.x0 + box.width * 0.1, box.y0,
+#                   box.width * 0.9, box.height])
 
-# Put a legend below current axis
-ax.legend(loc='center left', bbox_to_anchor=(-0.5, 0),
-          fancybox=True, shadow=True, nrow=1)
-
+# # Put a legend below current axis
+# ax.legend(loc='center left', bbox_to_anchor=(-0.3, 0.5),
+#           fancybox=True, shadow=True, ncol=1)
+ax.legend()
+plt.tight_layout()
 fig.show()
 
 

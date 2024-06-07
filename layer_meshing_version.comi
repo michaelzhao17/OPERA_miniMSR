@@ -25,7 +25,7 @@ VARIABLE OPTION=PARAMETER, NAME=#mu_bent_MES, Value=0.03, DESCRIPTION='maximum e
 / air (total potential)
 VARIABLE OPTION=PARAMETER, NAME=#air_tot_MES, Value=0.05, DESCRIPTION='maximum element size for total potential air'
 / air (reduced potential)
-VARIABLE OPTION=PARAMETER, NAME=#air_red_MES, Value=0.005, DESCRIPTION='maximum element size for reduced potential air'
+VARIABLE OPTION=PARAMETER, NAME=#air_red_MES, Value=0.01, DESCRIPTION='maximum element size for reduced potential air'
 
 // maximum angle between elements (MAbE)
 / flat mumetal
